@@ -16,3 +16,15 @@ CREATE TABLE `user` (
 ALTER TABLE `user` ADD UNIQUE (`username`);
 ALTER TABLE `user` ADD UNIQUE (`email`);
 ALTER TABLE `user` ADD UNIQUE (`phone`);
+
+DROP TABLE IF EXISTS `hugher`;
+CREATE TABLE `hugher` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `hughername` varchar(50) DEFAULT NULL comment '胡椒名',
+  `password` varchar(255) DEFAULT NULL,
+  `title` varchar(500) DEFAULT NULL comment '标题',
+  `content` varchar(5000) DEFAULT NULL comment '内容',
+  `role` varchar(50) DEFAULT NULL comment '角色',
+    PRIMARY KEY (`id`)
+);
+-- ALTER TABLE `hugher` ADD UNIQUE (`hughername`);
