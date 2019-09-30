@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import edu.hubu.learn.dao.UserDao;
-import edu.hubu.learn.entity.Hugher;
 import edu.hubu.learn.entity.User;
 
 @Service
@@ -17,7 +16,5 @@ public class UserService {
         return userDao.findById(id).get();
     }
 
-	public Hugher getHugher(long l) {
-		return null;
-	}
+
 }

@@ -16,11 +16,4 @@ public class Hugher {
 
     private String password;
     
-    private String titleString;
-    
-    private String contenString;
-    
-    private String roleString;
-    
-    private boolean enabled;
 }

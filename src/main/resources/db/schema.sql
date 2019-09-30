@@ -27,4 +27,3 @@ CREATE TABLE `hugher` (
   `role` varchar(50) DEFAULT NULL comment '角色',
     PRIMARY KEY (`id`)
 );
--- ALTER TABLE `hugher` ADD UNIQUE (`hughername`);

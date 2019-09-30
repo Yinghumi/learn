@@ -1,5 +1,7 @@
 package edu.hubu.learn.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,4 +17,8 @@ public class HugherService {
     public Hugher getHugher(Long id) {
         return hugherDao.findById(id).get();
     }
+
+	public List<Hugher> getHughers() {
+		return hugherDao.findAll();
+	}
 }
