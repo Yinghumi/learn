@@ -15,5 +15,11 @@ public class Hugher {
     private String hughername;
 
     private String password;
+
+    @Column(name="avatar_url")
+    private String avatar;
+    
+	public void setAvatar(String string) {
+	}
     
 }

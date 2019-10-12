@@ -7,3 +7,4 @@ import edu.hubu.learn.entity.Hugher;
 public interface HugherDao extends JpaRepository<Hugher, Long> {
 
 }
+
