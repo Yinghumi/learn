@@ -20,15 +20,15 @@
      <div class="col-md-8">
        <table class="table table-hover">
         <thead>
-        <th>ID</th><th>名称</th><th>密码</th><th>头像</th><th>删除</th><th>修改</th>
+        <th>ID</th><th>剧名</th><th>大致内容</th><th>角色</th><th>删除</th><th>修改</th>
         </thead>
         <tbody>
           <#list hughers as hugher>
           <tr>
           <td>${hugher.id}</td>
           <td>${hugher.hughername}</td>
-          <td>${hugher.password}</td>
-          <td>${hugher.avatar}</td>
+          <td>${hugher.content}</td>
+          <td>${hugher.role}</td>
           <td><a href="/hugher/delete/${hugher.id}">删除</a></td>
           <td><a href="/hugher/modify/${hugher.id}">修改</a></td>
           <td><a href="/hugher/add_avatar/${hugher.id}">上传</a></td>

@@ -14,7 +14,10 @@ public class Hugher {
 
     private String hughername;
 
-    private String password;
+    private String content;
+
+    private String role;
+
 
     @Column(name="avatar_url")
     private String avatar;

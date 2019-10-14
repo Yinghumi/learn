@@ -30,7 +30,7 @@
       <div class="col-md-8">      
         <form action="/hugher/do_add_avatar/${hugher.id}" enctype="multipart/form-data" method="post">
             <div class="form-group">
-                <label for="avatar">头像图片</label>
+                <label for="avatar">剧照</label>
                 <input type="file" class="form-control" id="avatar" name="avatar" placeholder="请选择图片">
             </div>
             <button type="submit" class="btn btn-default">确认</button>

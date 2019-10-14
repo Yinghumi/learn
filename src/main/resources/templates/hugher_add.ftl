@@ -30,12 +30,16 @@
       <div class="col-md-8">      
         <form action="/hugher/do_add">
             <div class="form-group">
-                <label for="hughername">用户名</label>
+                <label for="hughername">剧名</label>
                 <input type="text" class="form-control" id="hughername" name="hughername" placeholder="请输入用户名">
             </div>
             <div class="form-group">
-                <label for="password">密码</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码">
+                <label for="content">大致内容</label>
+                <input type="content" class="form-control" id="content" name="content" placeholder="请输入大致内容">
+            </div>
+            <div class="form-group">
+                <label for="role">角色</label>
+                <input type="role" class="form-control" id="role" name="role" placeholder="请输入角色名">
             </div>
             <button type="submit" class="btn btn-default">确认</button>
         </form>
