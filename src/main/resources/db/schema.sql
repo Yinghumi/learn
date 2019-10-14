@@ -23,5 +23,6 @@ CREATE TABLE `hugher` (
   `hughername` varchar(50) DEFAULT NULL comment '剧名',
   `content` varchar(5000) DEFAULT NULL comment '内容',
   `role` varchar(50) DEFAULT NULL comment '角色',
+  `date` varchar(50) DEFAULT NULL comment '上映时间',
     PRIMARY KEY (`id`)
 );

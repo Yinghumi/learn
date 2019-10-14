@@ -18,6 +18,8 @@ public class Hugher {
 
     private String role;
 
+    private String date;
+
 
     @Column(name="avatar_url")
     private String avatar;
