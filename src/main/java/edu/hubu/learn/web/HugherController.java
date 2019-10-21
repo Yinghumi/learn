@@ -96,7 +96,7 @@ public class HugherController {
     public ModelAndView doSearchHugher(HttpServletRequest httpRequest) {
         ModelAndView mav = new ModelAndView();
         String keyword = httpRequest.getParameter("keyword");
-        List<Hugher> hughers = hugherService.searchHughers(keyword);
+        List<Hugher> hughers = hugherService.searchhughers(keyword);
         mav.addObject("hughers", hughers);
         mav.setViewName("hughers");
         return mav;
@@ -115,6 +115,7 @@ public class HugherController {
         try {
             String fileName = file.getOriginalFilename();
             String filePath = ResourceUtils.getURL("classpath:").getPath() + "../../../resources/main/static/";
+            log.info(filePath, fileName);
             File dest = new File(filePath + fileName);
             log.info(dest.getAbsolutePath());
             file.transferTo(dest);

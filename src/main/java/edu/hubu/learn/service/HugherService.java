@@ -25,11 +25,11 @@ public class HugherService {
         return hugherDao.findAll(new Sort(Direction.DESC, "id"));
     }
 
-    public List<Hugher> searchHughers(String keyword) {
-        Hugher hugher = new Hugher();
-        hugher.setHughername(keyword);
-        ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("hughername", match->match.contains());
-        Example<Hugher> example = Example.of(hugher, matcher);
+      public List<Hugher> searchhughers(String keyword) {
+        Hugher Hugher = new Hugher();
+        Hugher.setHughername(keyword);
+        ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("Hughername", match->match.contains());
+        Example<Hugher> example = Example.of(Hugher, matcher);
         Sort sort = new Sort(Direction.DESC, "id");
         return hugherDao.findAll(example, sort);
     }
